@@ -1,0 +1,6 @@
+D:\yliopisto\kurssit\ohj1\harjoitustyö\TammoneTylsaOhjelma\TammoneTylsaOhjelma\bin\Debug\TammoneTylsaOhjelma.exe
+D:\yliopisto\kurssit\ohj1\harjoitustyö\TammoneTylsaOhjelma\TammoneTylsaOhjelma\bin\Debug\TammoneTylsaOhjelma.pdb
+D:\yliopisto\kurssit\ohj1\harjoitustyö\TammoneTylsaOhjelma\TammoneTylsaOhjelma\obj\x86\Debug\TammoneTylsaOhjelma.csprojResolveAssemblyReference.cache
+D:\yliopisto\kurssit\ohj1\harjoitustyö\TammoneTylsaOhjelma\TammoneTylsaOhjelma\obj\x86\Debug\TammoneTylsaOhjelma.csproj.CoreCompileInputs.cache
+D:\yliopisto\kurssit\ohj1\harjoitustyö\TammoneTylsaOhjelma\TammoneTylsaOhjelma\obj\x86\Debug\TammoneTylsaOhjelma.exe
+D:\yliopisto\kurssit\ohj1\harjoitustyö\TammoneTylsaOhjelma\TammoneTylsaOhjelma\obj\x86\Debug\TammoneTylsaOhjelma.pdb

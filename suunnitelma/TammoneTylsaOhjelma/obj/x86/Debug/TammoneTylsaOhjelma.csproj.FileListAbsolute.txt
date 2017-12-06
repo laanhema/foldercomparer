@@ -10,3 +10,9 @@ C:\MyTemp\MyTemp\ohj1\laanhema\ht\suunnitelma\TammoneTylsaOhjelma\obj\x86\Debug\
 C:\MyTemp\MyTemp\ohj1\laanhema\ht\suunnitelma\TammoneTylsaOhjelma\obj\x86\Debug\TammoneTylsaOhjelma.csproj.CoreCompileInputs.cache
 C:\MyTemp\MyTemp\ohj1\laanhema\ht\suunnitelma\TammoneTylsaOhjelma\obj\x86\Debug\TammoneTylsaOhjelma.exe
 C:\MyTemp\MyTemp\ohj1\laanhema\ht\suunnitelma\TammoneTylsaOhjelma\obj\x86\Debug\TammoneTylsaOhjelma.pdb
+D:\yliopistojutut\kurssit\ohj1\ht\suunnitelma\TammoneTylsaOhjelma\bin\Debug\TammoneTylsaOhjelma.exe
+D:\yliopistojutut\kurssit\ohj1\ht\suunnitelma\TammoneTylsaOhjelma\bin\Debug\TammoneTylsaOhjelma.pdb
+D:\yliopistojutut\kurssit\ohj1\ht\suunnitelma\TammoneTylsaOhjelma\obj\x86\Debug\TammoneTylsaOhjelma.csprojResolveAssemblyReference.cache
+D:\yliopistojutut\kurssit\ohj1\ht\suunnitelma\TammoneTylsaOhjelma\obj\x86\Debug\TammoneTylsaOhjelma.csproj.CoreCompileInputs.cache
+D:\yliopistojutut\kurssit\ohj1\ht\suunnitelma\TammoneTylsaOhjelma\obj\x86\Debug\TammoneTylsaOhjelma.exe
+D:\yliopistojutut\kurssit\ohj1\ht\suunnitelma\TammoneTylsaOhjelma\obj\x86\Debug\TammoneTylsaOhjelma.pdb

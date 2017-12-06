@@ -1,11 +1,12 @@
 ﻿using System;
 using System.IO;
 using System.Collections.Generic;
+using System.Text;
 
 /// @author Lauri Makkonen
-/// @version 05.12.2017
+/// @version 04.12.2017
 /// <summary>
-/// A program that compares contents of two specified folders.
+/// A program that compares content of two specified folders.
 /// </summary>
 public class TammoneTylsaOhjelma
 {
@@ -18,7 +19,8 @@ public class TammoneTylsaOhjelma
             folder1Path = AskPath(folderNumber);
         } while (!ExceptionsAllDirectories(folder1Path) == false);
 
-        string[] folder1Array = FilesToArray(folder1Path);
+        StringBuilder[] folder1Array = FilesToArray(folder1Path);
+
 
         string folder2Path = "";
         folderNumber = "second";
@@ -28,12 +30,29 @@ public class TammoneTylsaOhjelma
         } while (!ExceptionsAllDirectories(folder2Path) == false);
 
         string[] folder2Array = FilesToArray(folder2Path);
-        
+
+        /*
+        for (int i = 0; i < folder1Array.Length; i++)
+        {
+            foreach (string item in folder1Array)
+            {
+                if (string.Equals(folder1Array[i], item) == true) { }
+                else missingFromFolder2.Add(folder1Array[i]);
+            }
+        }
+
+
+        for (int i = 0; i < folder2Array.Length; i++)
+        {
+            foreach (string item in folder2Array)
+            {
+                if (string.Equals(folder2Array[i], item) == true) { }
+                else missingFromFolder1.Add(folder2Array[i]);
+            }
+        }
+        */
 
         Console.WriteLine("Comparing folders...");
-
-
-
         List<string> folder1List = new List<string> { };
         foreach (string item in folder1Array)
         {
@@ -64,10 +83,7 @@ public class TammoneTylsaOhjelma
 
         }
 
-        string[] folder1PathEnding = folder1Path.Split('\\');
-        string[] folder2PathEnding = folder2Path.Split('\\');
         string textFilesPath = "";
-
         do
         {
             Console.WriteLine("Where would you like to create the .txt-files?");
@@ -75,22 +91,17 @@ public class TammoneTylsaOhjelma
             textFilesPath = Console.ReadLine();
 
         } while (!InvalidPath(textFilesPath) == false || !ExceptionsTopDirectoryOnly(textFilesPath) == false);
-        File.WriteAllLines(textFilesPath + @"\Missing from " + folder2PathEnding[folder2PathEnding.Length - 1] + ".txt", missingFromFolder2);
-        File.WriteAllLines(textFilesPath + @"\Missing from " + folder1PathEnding[folder1PathEnding.Length - 1] + ".txt", missingFromFolder1);
-        Console.WriteLine("DONE!");
+        File.WriteAllLines(textFilesPath + @"\MissingFromFolder2.txt", missingFromFolder2);
+        File.WriteAllLines(textFilesPath + @"\MissingFromFolder1.txt", missingFromFolder1);
+
     }
 
 
     /// <summary>
-    /// Subprogram that asks the user to write a path to the folder which he or she wants to examine. 
-    /// It reads the user's input and makes sure the path exists before returning it to the main program. 
-    /// If the path doesn't exist subprogram asks the user to input a new path. 
+    /// Subprogram that asks the user to write a path where 
     /// </summary>
-    /// <param name="folderNumber">
-    /// Changes what subprogram writes before user input
-    /// For ex. "first" makes it write "Write the path of the first folder:"
-    /// </param>
-    /// <returns>Path to a folder</returns>
+    /// <param name="folderNumber"></param>
+    /// <returns>User's written path</returns>
     public static string AskPath(string folderNumber)
     {
         Directory.SetCurrentDirectory("/");
@@ -112,13 +123,10 @@ public class TammoneTylsaOhjelma
 
 
     /// <summary>
-    /// Subprogram that checks if exceptions occur when trying to examine a certain folder and all it's subdirectories.
+    /// 
     /// </summary>
-    /// <param name="path">Path to a folder</param>
-    /// <returns>
-    /// "True" when exceptions occur
-    /// "False" when no exceptions occur
-    /// </returns>
+    /// <param name="path"></param>
+    /// <returns></returns>
     public static bool ExceptionsAllDirectories(string path)
     {
         try
@@ -136,17 +144,16 @@ public class TammoneTylsaOhjelma
 
 
     /// <summary>
-    /// Subprogram that gets all files under a folder and all it's subdirectories and then puts all of those files in an array. 
-    /// Also prints the content of the folders.
+    /// 
     /// </summary>
-    /// <param name="path">Path to a folder</param>
-    /// <returns>Array of the files under a folder and it's subdirectories</returns>
-    public static string[] FilesToArray(string path)
+    /// <param name="path"></param>
+    /// <returns></returns>
+    public static StringBuilder[] FilesToArray(string path)
     {
         Console.WriteLine("------------------------------------------------");
         Console.WriteLine("Folder content:");
         Console.WriteLine("------------------------------------------------");
-        string[] pathArray = Directory.GetFiles(path, "*.*", SearchOption.AllDirectories);
+        StringBuilder[] pathArray = Directory.GetFiles(path, "*.*", SearchOption.AllDirectories);
         for (int i = 0; i < pathArray.Length; i++)
         {
             pathArray[i] = Path.GetFileName(pathArray[i]);
@@ -160,21 +167,10 @@ public class TammoneTylsaOhjelma
 
 
     /// <summary>
-    /// Subprogram that returns "True" if a certain folder path doesn't exist.
+    /// 
     /// </summary>
-    /// <param name="path">Path to a folder</param>
-    /// <returns>
-    /// "True" when path doesn't exist
-    /// "False" when path exists
-    /// </returns>
-    /// <example>
-    /// <pre name="test">
-    /// string path = "kissa";
-    /// TammoneTylsaOhjelma.InvalidPath(path) === true;
-    /// path = "X:\\kissa\\koira\\kana";
-    /// TammoneTylsaOhjelma.InvalidPath(path) === true;
-    /// </pre>
-    /// </example>
+    /// <param name="path"></param>
+    /// <returns></returns>
     public static bool InvalidPath(string path)
     {
         if (Directory.Exists(path) == false)
@@ -187,15 +183,10 @@ public class TammoneTylsaOhjelma
 
 
     /// <summary>
-    /// Subprogram that checks if exceptions occur when trying to examine a certain folder path. 
-    /// (Only the very top directory)
-    /// In case of exception subprogram prevents the mainprogram from crashing and tells the user what's wrong. 
+    /// 
     /// </summary>
-    /// <param name="path">Path of a folder</param>
-    /// <returns>
-    /// "True" when exceptions occur
-    /// "False" when no exceptions occur
-    /// </returns>
+    /// <param name="path"></param>
+    /// <returns></returns>
     public static bool ExceptionsTopDirectoryOnly(string path)
     {
         try
@@ -210,15 +201,14 @@ public class TammoneTylsaOhjelma
 
         try
         {
-            File.WriteAllText(path + @"\test.txt", "test");
-            File.Delete(path + @"\test.txt");
+            File.WriteAllText(path + @"\MissingFromFolder1.txt", "test");
+
         }
         catch (UnauthorizedAccessException noAccess)
         {
             Console.WriteLine(noAccess.Message);
             return true;
         }
-
         return false;
     }
 

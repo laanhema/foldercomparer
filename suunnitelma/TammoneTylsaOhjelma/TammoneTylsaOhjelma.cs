@@ -3,7 +3,7 @@ using System.IO;
 using System.Collections.Generic;
 
 /// @author Lauri Makkonen
-/// @version 05.12.2017
+/// @version 07.12.2017
 /// <summary>
 /// A program that compares contents of two specified folders.
 /// </summary>
@@ -35,8 +35,8 @@ public class TammoneTylsaOhjelma
         List<string> folder1List = ListFromArray(folder1Array);
         List<string> folder2List = ListFromArray(folder2Array);
 
-        List<string> missingFromFolder2 = new List<string> { };
-        List<string> missingFromFolder1 = new List<string> { };
+        List<string> missingFromFolder2 = CompareFolders(folder1Array, folder1List, folder2List);
+        List<string> missingFromFolder1 = CompareFolders(folder2Array, folder2List, folder1List);
 
         for (int i = 0; i < folder1Array.Length; i++)
         {
@@ -211,6 +211,7 @@ public class TammoneTylsaOhjelma
         return false;
     }
 
+
     /// <summary>
     /// Subprogram that makes a list based on the array it was given. 
     /// </summary>
@@ -226,6 +227,24 @@ public class TammoneTylsaOhjelma
         return list;
     }
 
+
+    /// <summary>
+    
+    /// </summary>
+    /// <param name="folderXArray"></param>
+    /// <param name="folder1List"></param>
+    /// <param name="folder2List"></param>
+    /// <returns></returns>
+    public static List<string> CompareFolders(string[] folderXArray, List<string> folder1List, List<string> folder2List)
+    {
+
+        List<string> missingFromFolderX = new List<string> { };
+        for (int i = 0; i < folderXArray.Length; i++)
+        {
+            if (!folder2List.Contains(folderXArray[i])) missingFromFolderX.Add(folder1List[i]);
+        }
+        return missingFromFolderX;
+    }
 
         
 

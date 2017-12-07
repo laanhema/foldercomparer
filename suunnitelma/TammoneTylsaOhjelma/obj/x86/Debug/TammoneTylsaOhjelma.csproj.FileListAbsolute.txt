@@ -22,3 +22,9 @@ C:\MyTemp\laanhema\trunk\suunnitelma\TammoneTylsaOhjelma\obj\x86\Debug\TammoneTy
 C:\MyTemp\laanhema\trunk\suunnitelma\TammoneTylsaOhjelma\obj\x86\Debug\TammoneTylsaOhjelma.csproj.CoreCompileInputs.cache
 C:\MyTemp\laanhema\trunk\suunnitelma\TammoneTylsaOhjelma\obj\x86\Debug\TammoneTylsaOhjelma.exe
 C:\MyTemp\laanhema\trunk\suunnitelma\TammoneTylsaOhjelma\obj\x86\Debug\TammoneTylsaOhjelma.pdb
+C:\MyTemp\laanhema\ht\TammoneTylsaOhjelma\bin\Debug\TammoneTylsaOhjelma.exe
+C:\MyTemp\laanhema\ht\TammoneTylsaOhjelma\bin\Debug\TammoneTylsaOhjelma.pdb
+C:\MyTemp\laanhema\ht\TammoneTylsaOhjelma\obj\x86\Debug\TammoneTylsaOhjelma.csprojResolveAssemblyReference.cache
+C:\MyTemp\laanhema\ht\TammoneTylsaOhjelma\obj\x86\Debug\TammoneTylsaOhjelma.csproj.CoreCompileInputs.cache
+C:\MyTemp\laanhema\ht\TammoneTylsaOhjelma\obj\x86\Debug\TammoneTylsaOhjelma.exe
+C:\MyTemp\laanhema\ht\TammoneTylsaOhjelma\obj\x86\Debug\TammoneTylsaOhjelma.pdb

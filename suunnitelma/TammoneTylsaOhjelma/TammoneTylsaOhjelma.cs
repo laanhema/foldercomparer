@@ -16,7 +16,7 @@ public class TammoneTylsaOhjelma
         do
         {
             folder1Path = AskPath(folderNumber);
-        } while (!ExceptionsAllDirectories(folder1Path) == false);
+        } while (ExceptionsAllDirectories(folder1Path));
 
         string[] folder1Array = FilesToArray(folder1Path);
 
@@ -25,26 +25,15 @@ public class TammoneTylsaOhjelma
         do
         {
             folder2Path = AskPath(folderNumber);
-        } while (!ExceptionsAllDirectories(folder2Path) == false);
+        } while (ExceptionsAllDirectories(folder2Path));
 
         string[] folder2Array = FilesToArray(folder2Path);
         
 
         Console.WriteLine("Comparing folders...");
 
-
-
-        List<string> folder1List = new List<string> { };
-        foreach (string item in folder1Array)
-        {
-            folder1List.Add(item);
-        }
-
-        List<string> folder2List = new List<string> { };
-        foreach (string item in folder2Array)
-        {
-            folder2List.Add(item);
-        }
+        List<string> folder1List = ListFromArray(folder1Array);
+        List<string> folder2List = ListFromArray(folder2Array);
 
         List<string> missingFromFolder2 = new List<string> { };
         List<string> missingFromFolder1 = new List<string> { };
@@ -59,7 +48,7 @@ public class TammoneTylsaOhjelma
         for (int i = 0; i < folder2Array.Length; i++)
         {
             if
-            (folder1List.Contains(folder2List[i])) { }
+            (folder1List.Contains(folder2Array[i])) { }
             else missingFromFolder1.Add(folder2List[i]);
 
         }
@@ -74,7 +63,7 @@ public class TammoneTylsaOhjelma
             Console.Write(">");
             textFilesPath = Console.ReadLine();
 
-        } while (!InvalidPath(textFilesPath) == false || !ExceptionsTopDirectoryOnly(textFilesPath) == false);
+        } while (InvalidPath(textFilesPath) || ExceptionsTopDirectoryOnly(textFilesPath));
         File.WriteAllLines(textFilesPath + @"\Missing from " + folder2PathEnding[folder2PathEnding.Length - 1] + ".txt", missingFromFolder2);
         File.WriteAllLines(textFilesPath + @"\Missing from " + folder1PathEnding[folder1PathEnding.Length - 1] + ".txt", missingFromFolder1);
         Console.WriteLine("DONE!");
@@ -221,6 +210,25 @@ public class TammoneTylsaOhjelma
 
         return false;
     }
+
+    /// <summary>
+    /// Subprogram that makes a list based on the array it was given. 
+    /// </summary>
+    /// <param name="array">Array from which the list is made</param>
+    /// <returns>A list</returns>
+    public static List<string> ListFromArray(string[] array)
+    {
+        List<string> list = new List<string> { };
+        foreach (string item in array)
+        {
+            list.Add(item);
+        }
+        return list;
+    }
+
+
+        
+
 
 
 }

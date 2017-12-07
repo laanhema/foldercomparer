@@ -16,3 +16,9 @@ D:\yliopistojutut\kurssit\ohj1\ht\suunnitelma\TammoneTylsaOhjelma\obj\x86\Debug\
 D:\yliopistojutut\kurssit\ohj1\ht\suunnitelma\TammoneTylsaOhjelma\obj\x86\Debug\TammoneTylsaOhjelma.csproj.CoreCompileInputs.cache
 D:\yliopistojutut\kurssit\ohj1\ht\suunnitelma\TammoneTylsaOhjelma\obj\x86\Debug\TammoneTylsaOhjelma.exe
 D:\yliopistojutut\kurssit\ohj1\ht\suunnitelma\TammoneTylsaOhjelma\obj\x86\Debug\TammoneTylsaOhjelma.pdb
+C:\MyTemp\laanhema\trunk\suunnitelma\TammoneTylsaOhjelma\bin\Debug\TammoneTylsaOhjelma.exe
+C:\MyTemp\laanhema\trunk\suunnitelma\TammoneTylsaOhjelma\bin\Debug\TammoneTylsaOhjelma.pdb
+C:\MyTemp\laanhema\trunk\suunnitelma\TammoneTylsaOhjelma\obj\x86\Debug\TammoneTylsaOhjelma.csprojResolveAssemblyReference.cache
+C:\MyTemp\laanhema\trunk\suunnitelma\TammoneTylsaOhjelma\obj\x86\Debug\TammoneTylsaOhjelma.csproj.CoreCompileInputs.cache
+C:\MyTemp\laanhema\trunk\suunnitelma\TammoneTylsaOhjelma\obj\x86\Debug\TammoneTylsaOhjelma.exe
+C:\MyTemp\laanhema\trunk\suunnitelma\TammoneTylsaOhjelma\obj\x86\Debug\TammoneTylsaOhjelma.pdb

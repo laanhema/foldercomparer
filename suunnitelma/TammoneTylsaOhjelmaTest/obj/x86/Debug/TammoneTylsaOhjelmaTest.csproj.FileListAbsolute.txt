@@ -1,9 +1,0 @@
-D:\yliopistojutut\kurssit\ohj1\ht\suunnitelma\TammoneTylsaOhjelmaTest\obj\x86\Debug\TammoneTylsaOhjelmaTest.csprojResolveAssemblyReference.cache
-D:\yliopistojutut\kurssit\ohj1\ht\suunnitelma\TammoneTylsaOhjelmaTest\obj\x86\Debug\TammoneTylsaOhjelmaTest.csproj.CoreCompileInputs.cache
-D:\yliopistojutut\kurssit\ohj1\ht\suunnitelma\TammoneTylsaOhjelmaTest\bin\x86\Debug\TammoneTylsaOhjelmaTest.dll
-D:\yliopistojutut\kurssit\ohj1\ht\suunnitelma\TammoneTylsaOhjelmaTest\bin\x86\Debug\TammoneTylsaOhjelmaTest.pdb
-D:\yliopistojutut\kurssit\ohj1\ht\suunnitelma\TammoneTylsaOhjelmaTest\bin\x86\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
-D:\yliopistojutut\kurssit\ohj1\ht\suunnitelma\TammoneTylsaOhjelmaTest\bin\x86\Debug\TammoneTylsaOhjelma.exe
-D:\yliopistojutut\kurssit\ohj1\ht\suunnitelma\TammoneTylsaOhjelmaTest\bin\x86\Debug\TammoneTylsaOhjelma.pdb
-D:\yliopistojutut\kurssit\ohj1\ht\suunnitelma\TammoneTylsaOhjelmaTest\obj\x86\Debug\TammoneTylsaOhjelmaTest.dll
-D:\yliopistojutut\kurssit\ohj1\ht\suunnitelma\TammoneTylsaOhjelmaTest\obj\x86\Debug\TammoneTylsaOhjelmaTest.pdb

@@ -3,7 +3,7 @@ using System.IO;
 using System.Collections.Generic;
 
 /// @author Lauri Makkonen
-/// @version 07.12.2017
+/// @version 19.11.2019
 /// <summary>
 /// A program that compares contents of two specified folders.
 /// </summary>
@@ -11,6 +11,11 @@ public class FolderComparer
 {
     public static void Main()
     {
+
+        /// TODO: 
+        /// -   muuta ohjelma käyttämään jotain nopeampaa tietorakennetta (esim. <String>TreeMap)
+        ///     taulukon sijasta. Verratessa isompia kansioita suoritukseen kuluu paljon aikaa...
+        /// -   "Access to the path 'C:\test.txt' is denied." kuulostaa oudolta
         string folder1Path = "";
         string folderNumber = "first";
         do
@@ -114,9 +119,9 @@ public class FolderComparer
         {
             Directory.GetFiles(path, "*.*", SearchOption.AllDirectories);
         }
-        catch (UnauthorizedAccessException noAccess)
+        catch (Exception e)
         {
-            Console.WriteLine(noAccess.Message);
+            Console.WriteLine(e.Message);
             return true;
         }
 

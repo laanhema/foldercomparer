@@ -1,5 +1,0 @@
-D:\yliopisto\kurssit\ohj1\harjoitustyö\TammoneTylsaOhjelma\test\bin\Debug\test.exe
-D:\yliopisto\kurssit\ohj1\harjoitustyö\TammoneTylsaOhjelma\test\bin\Debug\test.pdb
-D:\yliopisto\kurssit\ohj1\harjoitustyö\TammoneTylsaOhjelma\test\obj\x86\Debug\test.csproj.CoreCompileInputs.cache
-D:\yliopisto\kurssit\ohj1\harjoitustyö\TammoneTylsaOhjelma\test\obj\x86\Debug\test.exe
-D:\yliopisto\kurssit\ohj1\harjoitustyö\TammoneTylsaOhjelma\test\obj\x86\Debug\test.pdb

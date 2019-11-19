@@ -1,0 +1,9 @@
+C:\devel\ohj1ht\TammoneTylsaOhjelma\bin\Debug\FolderComparer.exe
+C:\devel\ohj1ht\TammoneTylsaOhjelma\bin\Debug\FolderComparer.pdb
+C:\devel\ohj1ht\TammoneTylsaOhjelma\obj\x86\Debug\FolderComparer.exe
+C:\devel\ohj1ht\TammoneTylsaOhjelma\obj\x86\Debug\FolderComparer.pdb
+C:\devel\ohj1ht\FolderComparer\bin\Debug\FolderComparer.exe
+C:\devel\ohj1ht\FolderComparer\bin\Debug\FolderComparer.pdb
+C:\devel\ohj1ht\FolderComparer\obj\x86\Debug\FolderComparer.exe
+C:\devel\ohj1ht\FolderComparer\obj\x86\Debug\FolderComparer.pdb
+C:\devel\ohj1ht\FolderComparer\obj\x86\Debug\FolderComparer.csprojAssemblyReference.cache
